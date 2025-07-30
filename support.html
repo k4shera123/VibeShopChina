@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VibeShopChina — Техподдержка</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">VibeShopChina</a>
+      <nav class="site-nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="favorites.html">Избранное</a>
+        <a href="support.html">Техподдержка</a>
+      </nav>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </header>
+
+  <main class="container support-page">
+    <h1>Техническая поддержка</h1>
+    <form id="support-form">
+      <label>Имя<br/><input type="text" name="name" required /></label>
+      <label>Телефон<br/><input type="tel" name="phone" required /></label>
+      <label>Сообщение<br/><textarea name="message" rows="4" required></textarea></label>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2025 VibeShopChina</p>
+  </footer>
+
+  <script>
+    document.getElementById('support-form').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Спасибо! Мы свяжемся с вами в Telegram.');
+    });
+  </script>
+</body>
+</html>
